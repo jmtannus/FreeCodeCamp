@@ -10,6 +10,7 @@ body {
     background-color: #218c74;
     font-family: 'Red Hat Display', sans-serif;
     text-align: center;
+    text-size: 10px;
     margin: 0;
     //padding-top: 50px;
 }
@@ -42,7 +43,8 @@ form {
 }
 
 .form-control input,
-.form-control select {
+.form-control select,
+.form-control textarea {
     border: 1px solid #777;
     border-radius: 2px;
     font-family: inherit;
@@ -55,4 +57,18 @@ form {
 .form-control input[type="checkbox"] {
     display: inline-block;
     width: auto;
+    border: 1px solid #777;
+}
+
+button {
+    background-color: #84817a;
+    border: 1px solid #84817a;
+    border-radius: 2px;
+    font-family: inherit;
+    display: block;
+    padding: 10px;
+    width: 100%;
+    font-color: #fff;
+
+
 }
