@@ -12,7 +12,7 @@
 
     <form id="survey-form">
         <div class="form-control">
-            <label for="name" id="label-name">Nome</label>
+            <label for="name" id="name-label">Nome</label>
             <input type="text" id="name" placeholder="Digite seu nome" required />
         </div>
 
@@ -22,13 +22,13 @@
         </div>
 
         <div class="form-control">
-            <label for="age" id="label-age">Idade</label>
-            <input type="age" id="age" min="8" max="50" placeholder="Digite sua idade" />
+            <label for="number" id="number-label">Idade</label>
+            <input type="number" id="number" placeholder="Digite sua idade" required min="0" max="110" />
         </div>
 
         <div class="form-control">
             <label for="role">Que opção melhor descreve sua função atual?</label>
-            <select name="role" id="role">
+            <select name="role" id="dropdown">
                 <option value="student">Estudante</option>
                 <option value="full-time">Full-time</option>
                 <option value="part-time">Part-time</option>
@@ -38,9 +38,9 @@
 
         <div class="form-control">
             <label>Você recomendaria o FreeCodeCamp para um amigo?</label>
-            <label for="recommend-1"><input type="radio" id="recommend-1" name="recommend" />Claro!</label>
-            <label for="recommend-2"><input type="radio" id="recommend-2" name="recommend" />Talvez</label>
-            <label for="recommend-3"><input type="radio" id="recommend-3" name="recommend" />Não tenho certeza</label>
+            <label for="recommend-1" ><input type="radio" id="recommend-1" name="recommend" value="definitely"/>Claro!</label>
+            <label for="recommend-2" ><input type="radio" id="recommend-2" name="recommend" value="maybe"/>Talvez</label>
+            <label for="recommend-3" ><input type="radio" id="recommend-3" name="recommend" value="not sure"/>Não tenho certeza.</label>
         </div>
 
         <div class="form-control">
@@ -55,17 +55,17 @@
 
         <div class="form-control">
             <label>O que você gostaria de ver melhorado?<small>(Marque todas as opções aplicáveis)</small></label>
-            <label for="improve-1"><input type="checkbox" name="improve" id="improve-1"/> Projetos de back-end</label>
-            <label for="improve-2"><input type="checkbox" name="improve" id="improve-2"/> Visualização de dados</label>
-            <label for="improve-3"><input type="checkbox" name="improve" id="improve-3"/> Desafios</label>
-            <label for="improve-4"><input type="checkbox" name="improve" id="improve-4"/> Comunidade de código aberto</label>
-            <label for="improve-5"><input type="checkbox" name="improve" id="improve-5"/> Salas de ajuda do Gitter</label>
-            <label for="improve-6"><input type="checkbox" name="improve" id="improve-6"/> Vídeos</label>
-            <label for="improve-7"><input type="checkbox" name="improve" id="improve-7"/> Encontros na cidade</label>
-            <label for="improve-8"><input type="checkbox" name="improve" id="improve-8"/> Uma semana</label>
-            <label for="improve-9"><input type="checkbox" name="improve" id="improve-9"/> Fórum</label>
-            <label for="improve-10"><input type="checkbox" name="improve" id="improve-10"/> Projetos front-end</label>
-            <label for="improve-11"><input type="checkbox" name="improve" id="improve-11"/> Cursos adicionais</label>
+            <label for="improve-1"><input type="checkbox" name="improve" id="improve-1" value="improve-1"/> Projetos de back-end</label>
+            <label for="improve-2"><input type="checkbox" name="improve" id="improve-2" value="improve-2"/> Visualização de dados</label>
+            <label for="improve-3"><input type="checkbox" name="improve" id="improve-3" value="improve-3"/> Desafios</label>
+            <label for="improve-4"><input type="checkbox" name="improve" id="improve-4" value="improve-4"/> Comunidade de código aberto</label>
+            <label for="improve-5"><input type="checkbox" name="improve" id="improve-5" value="improve-5"/> Salas de ajuda do Gitter</label>
+            <label for="improve-6"><input type="checkbox" name="improve" id="improve-6" value="improve-6"/> Vídeos</label>
+            <label for="improve-7"><input type="checkbox" name="improve" id="improve-7" value="improve-7"/> Encontros na cidade</label>
+            <label for="improve-8"><input type="checkbox" name="improve" id="improve-8" value="improve-8"/> Uma semana</label>
+            <label for="improve-9"><input type="checkbox" name="improve" id="improve-9" value="improve-9"/> Fórum</label>
+            <label for="improve-10"><input type="checkbox" name="improve" id="improve-10" value="improve-10"/> Projetos front-end</label>
+            <label for="improve-11"><input type="checkbox" name="improve" id="improve-11" value="improve-11"/> Cursos adicionais</label>
         </div>
 
         <div class="form-control">
@@ -73,7 +73,7 @@
             <textarea name="comments" id="comments" placeholder="Digite seu comentário aqui..."></textarea>
         </div>
 
-        <button type="submit">Enviar </button>
+        <button type="submit" id="submit">Enviar </button>
     </form>
 </body>
 
