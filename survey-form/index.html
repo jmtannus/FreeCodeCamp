@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1 id="title">Formulário de Pesquisa</h1>
+    <p id="description"><i>Por favor, nos ajude a melhoras cada vez mais a qualidade dos nossos serviços. Muito obrigada!</i></p>
+
+    <form id="survey-form">
+      <div class="form-control">
+        <label for="name" id="label-name" >Nome</label>
+        <input type="text"  id="name" placeholder="Digite seu nome" required/>
+      </div>
+
+      <div class="form-control">
+        <label for="email" id="email-label" >E-mail</label>
+        <input type="email" id="email" placeholder="Digite seu email" required/>
+      </div>
+
+      <div class="form-control">
+        <label for="age" id="label-age" >Idade</label>
+        <input type="age" id="age" min="8" max="50" placeholder="Digite sua idade"/>
+      </div>
+      
+      <div class="form-control">
+        <label for="role" >Que opção melhor descreve sua função atual?</label>
+        <select name="role" id="role">
+            <option value="student">Estudante</option>
+            <option value="full-time">Full-time</option>
+            <option value="part-time">Part-time</option>
+            <option value="other">Outros</option>
+        </select>
+      </div>
+        
+        <div class="form-control">
+        <label  >Você recomendaria o FreeCodeCamp para um amigo?</label>
+        <label for="recommend-1"><input type="radio" id="recommend-1" name="recommend"/>Claro!</label>
+        <label for="recommend-2"><input type="radio" id="recommend-2" name="recommend"/>Talvez</label>
+        <label for="recommend-3"><input type="radio" id="recommend-3" name="recommend"/>Não tenho certeza</label>
+        </div>
+
+        <div class="form-control">
+            <label for="feature">Qual é o seu recurso favorito do freeCodeCamp?</label>
+            <select name="feature" id="feature">
+                <option value="challenges">Challenges</option>
+                <option value="projects">Projects</option>
+                <option value="community">Community</option>
+                <option value="open-source">Open Source</option>
+            </select>
+          </div>
+        
+        <div class="form-control">    
+            <label>O que você gostaria de ver melhorado?<small>(Marque todas as opções aplicáveis)</small></label>
+            <label for="improve-1"><input type="checkbox" name="improve" id="improve-1" /></label>Projetos de back-end</label>
+            <label for="improve-2"><input type="checkbox" name="improve" id="improve-2" /></label> Visualização de dados</label>
+            <label for="improve-3"><input type="checkbox" name="improve" id="improve-3" /></label> Desafios</label>
+            <label for="improve-4"><input type="checkbox" name="improve" id="improve-4" /></label> Comunidade de código aberto</label>
+            <label for="improve-5"><input type="checkbox" name="improve" id="improve-5" /></label> Salas de ajuda do Gitter</label>
+            <label for="improve-6"><input type="checkbox" name="improve" id="improve-6" /></label> Vídeos</label>
+            <label for="improve-7"><input type="checkbox" name="improve" id="improve-7" /></label> Encontros na cidade</label>
+            <label for="improve-8"><input type="checkbox" name="improve" id="improve-8" /></label> Uma semana</label>
+            <label for="improve-9"><input type="checkbox" name="improve" id="improve-9" /></label> Fórum </label> 
+            <label for="improve-10"><input type="checkbox" name="improve" id="improve-10" /></label> Projetos front-end </label>
+            <label for="improve-11"><input type="checkbox" name="improve" id="improve-11" /></label> Cursos adicionais </label>
+        </div>
+
+
+
+    </form>
+  </body>
+</html>
