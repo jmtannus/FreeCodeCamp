@@ -1,0 +1,70 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Product Landing Page</title>
+</head>
+
+<header id="header">
+    <h1>M&G Estúdio OroFacial</h1>
+    <img
+        src="https://img.freepik.com/fotos-gratis/ferramentas-profissionais-de-dentista-no-consultorio-odontologico_1204-235.jpg?w=1380&t=st=1695529713~exp=1695530313~hmac=8cbc9e68ee74266e6d3aea2ddeb809836cf1c762ed53e263b5753973517d88b7"
+        alt="Sala de dentista" 
+        id="header-img"
+    />
+    <nav id="nav-bar">
+        <a href="#portfolio" class="nav-link">Portfolio</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#aboutme" class="nav-link">About Me</a>
+    </nav>
+</header>
+<body>
+    <section id="portfolio"></section>
+    <section id="projects"></section>
+    <section id="aboutme">
+       <iframe src="https://www.instagram.com/reel/Cu-I6TkOXxn" id="video" frameborder="0"></iframe>
+    </section>
+</body>
+<footer>
+    <form action="https://www.freecodecamp.com/email-submit" id="form">
+        <input
+        type="text" id="text" name="" placeholder="Question?" required/>
+        </br>
+        <input
+        type="email" id="email" name="email" placeholder="What is your email?" required/>
+        <input
+        type="submit" id="submit" value="Ask now?" class="submit" required/>    
+    </form>
+</footer>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 20px;
+  padding: 25px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  opacity: 0.8;
+}
+
+@Media (max-width: 500px) {
+  body {
+    flex-wrap: wrap;
+  }
+}
+
+** end of undefined **
+

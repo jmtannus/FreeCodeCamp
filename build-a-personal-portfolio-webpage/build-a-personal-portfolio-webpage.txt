@@ -1,0 +1,357 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title>Jana Tannus Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stysheet">
+    <link href="css/site.css" rel="stylesheet" />
+    <link href="css/animascroll.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <nav id="navbar">
+        <ul class="nav-links">
+          <li><a href="#welcome-section" class="nav-link" >Seja bem vindo!</a></li>
+          <li><a href="#projects" class="nav-link">Projetos</a></li>
+          <li><a href="#contact" class="nav-link">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="welcome-section">
+      <h1>Hello, I´m Janna.</h1>
+      <p>A full stack developer</p>
+    </section>
+
+    <section id="projects">
+      <h1>These are some of my projects</h1>
+      <div class="projects">
+        <a href="#" class="project-tile">
+          <img src="./TributePage.png" alt="">
+          <p><span>&lt;</span>Tribute Page<span>/&gt;</span></p>
+        </a>
+        <a href="#" class="project-tile">
+          <img src=""./SurveyForm.png"" alt="">
+          <p><span>&lt;</span>Survey Form<span>/&gt;</span></p>
+        </a>
+        <a href="#" class="project-tile">
+          <img src=""./TecnicalDocumentation.png"" alt="">
+          <p><span>&lt;</span>Tecnical Documentation<span>/&gt;</span></p>
+        </a>
+        <a href="#" class="project-tile">
+          <img src=""./ProductLanding.png"" alt="">
+          <p><span>&lt;</span>Product Landing<span>/&gt;</span></p>
+        </a>
+      </div>
+      <a href="" class="show-all"> Show All <i class="ri-arrow-drop-right-line ri-2x"></i>
+      </a>
+    </section>
+    <section id="contact">
+      <h1>Let's work together...</h1>
+      <p class="coffee-question">How do you take your coffee?</p>
+      <div class="social-medias">        
+        <a href="" class="social-media" id="profile-link" target= "_blank">
+          <i class="ri-github-fill ri-2x"></i>
+          <p>GitHub</p>
+        </a>
+        <a href="" class="social-media">
+          <i class="ri-fire-fill ri-2x"></i>
+          <p>FreeCodeCamp</p>
+        </a>
+        <a href="" class="social-media">
+          <i class="ri-at-line ri-2x"></i>
+          <p>Send a email</p>
+        </a>
+        <a href="" class="social-media">
+          <i class="ri-instagram-fill ri-2x"></i>
+          <p>Instagram</p>
+        </a>
+      </div>
+    </section>
+    <footer class="footer">
+      <a id="profile-link" target= "_blank">Create by Janna Tannus Sept 2023</a>
+    </footer>
+      <!-- <script src="javascript/basicScroll.min.js"></script>
+      <script src="javascript/inicia-scroll.js"></script> -->
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+    <div class="cabecera">
+      <div class="cabecera__bloque1">
+        <img src="images/Amundsen.jpg" alt="Roald Amundsen" />
+      </div>
+      <div class="cabecera__bloque2">
+        <img src="images/Scott.jpg" alt="Robert Falcon Scott" />
+      </div>
+      <div class="cabecera__titulo"><h1>La carrera hacia el Polo Sur</h1></div>
+    </div>
+
+    <article class="articulo">
+      <p class="articulo__entradilla">
+        
+      </p>
+    </article>
+
+    <footer class="footer"></footer>
+
+    <script src="javascript/basicScroll.min.js"></script>
+    <script src="javascript/inicia-scroll.js"></script> -->
+ 
+
+
+** end of undefined **
+
+** start of undefined **
+
+:root {
+  --neutral : #232946;
+  --base-100 : #fffffe;
+  --neutral-focus : #121629;
+  --primary : #eebbc3;
+  --accent: #d4d8f0;
+  --secondary: #b8c1ec;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: sans-serif;
+  text-align: center;
+  background-color: var(--neutral);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  }
+
+h1 {
+  font-size: 60px;
+}
+
+
+#navbar {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--neutral);
+  padding: 20px 0;
+  font-size: 20px;
+  border-bottom: 1px solid var(--neutral-focus);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  padding: 0 10px;
+  color: var(--base-100);
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+section {
+  min-height: 100vh;
+  padding: 70px 0;
+}
+
+#welcome-section {
+  background-color: var(--natural);
+  color: var(--base-100);
+  display: flex;
+  flex-direction: column;
+}
+#welcome-section h1 {
+  margin-top: 30vh;
+}
+#welcome-section p {
+  color: var(--primary);
+  font-size: 25px;
+  margin: 25px 0;
+  font-style: italic;
+}
+
+#projects {
+  background-color: var(--secondary);
+  color: var(--neutral);
+}
+#projects h1 {
+  border-bottom: 5px solid var(--neutral);
+  width: fit-content;
+  margin: auto;
+}
+
+#projects .projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 20px;
+  place-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+#projects .project-tile {
+  height: 525px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--neutral);
+  text-decoration: none;
+  color: var(--accent);
+  border-radius: 5px;
+  box-shadow: 8px 8px 10px 5px rgba(100, 100, 100, 0.3)
+}
+
+#projects .project-tile img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#projects .project-tile p {
+  font-size: 25px;
+  padding: 10px;
+}
+
+#projects .project-tile span {
+  opacity: 0%;
+  padding: 0 5px;
+}
+
+#projects .project-tile span {
+  opacity: 100%;
+  color: var(--primary);
+  transition: opacity 0.25s ease-in;
+}
+
+.show-all {
+  text-decoration: none;
+  width: max-content;
+  display:flex;
+  align-items: center;
+  margin: auto;
+  padding: 0px, 15px;
+  background-color: var(--neutral);
+  color: var(--accent);
+  border-radius: 5px;
+  font-size: 25px;
+  cursor: pointer;
+  transition: background-color 0.2s easy-in;
+}
+.show-all hover {
+  background-color: var(--neutral-focus);
+  color: var(--base-100);
+}
+
+#contact {
+  background-color: var(--neutral);
+  color: var(--base-100);
+}
+
+#contact h1 {
+  margin-top: 300px;
+}
+
+#contact .coffee-question {
+  color: var(--primary);
+  font-size: 25px;
+  font-style: italic;
+
+}
+
+#contact .social-medias {
+  display:flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  justify-content: space-around;
+  margin: auto;
+  margin-top: 30px;
+}
+
+
+#contact .social-media {
+  display:flex;
+  text-decoration: none;
+  color: var(--base-100);
+  transition: transform 0.2s easy-in;
+  align-items: center;
+  margin: 20px;
+  font-size: 22px;
+}
+
+
+#contact .social-media:hover {
+  transform: translateY(10px);
+}
+
+footer {
+  border-top: 3px solid var(--primary);
+  color: var(--base-100);
+  font-size: 20px;
+  padding: 30px;
+}
+
+@media only screen and (width < 700px) {
+  h1 {
+    font-size: 50px;
+  }
+  #projects .project-tile{
+    height: 600px;
+    width: 100%;
+  }
+}
+
+** end of undefined **
+
