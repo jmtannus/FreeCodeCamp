@@ -16,14 +16,20 @@ const goldText = document.querySelector("#goldText");
 const monsterStats = document.querySelector("#monsterStats");
 const monsterName = document.querySelector("#monsterName");
 const monsterHealthText = document.querySelector("#monsterHealth");
-const locations = [{ }];
+
+const locations = [
+  {
+    name: "town square",
+    "button text": [],
+  },
+];
 
 // initialize buttons
 button1.onclick = goStore;
 button2.onclick = goCave;
 button3.onclick = fightDragon;
 
-function update(location) {}
+function update(locations) {}
 
 function goTown() {
   button1.innerText = "Go to store";
