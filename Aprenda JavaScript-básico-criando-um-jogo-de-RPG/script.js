@@ -106,11 +106,10 @@ function buyHealth() {
 function buyWeapon() {
   if (gold >= 30) {
     gold -= 30;
-    goldText.innerText = gold;
-    text.innerText = "You now have a new weapon.";
     currentWeapon++;
-  } else {
-    text.innerText = "You do not have enough gold to buy health.";
+    goldText.innerText = gold;
+    let newWeapon = weapons;
+    text.innerText = "You now have a new weapon.";
   }
 }
 
